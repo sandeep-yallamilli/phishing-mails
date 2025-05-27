@@ -1,0 +1,33 @@
+Official Report: Phishing Email Analysis
+
+Subject: NOT SPAM RFQ 116 10007320-PM0770 ANNUAL RADIO SURVEY PEV
+
+Summary:
+An email purporting to be an official Request for Quotation (RFQ) from a company named Petra Energy Berhad invites recipients to submit competitive bids for an annual radio survey project. The email requests technical and commercial proposals with specific submission deadlines and instructions. However, the email is flagged as a phishing attempt with a malicious PDF attachment containing the Remcos Remote Access Trojan (RAT).
+
+Details:
+
+Sender: Identified as "Petra" with a redacted email address.
+Recipient: Redacted.
+Date: May 8, 2025.
+Content: The email invites the recipient to participate in a bidding process for the annual radio survey, outlining submission requirements including technical proposal, commercial proposal, validity of quotation, payment terms, and standard terms and conditions.
+Submission deadlines: Technical and Commercial Unpriced Bid Proposals due by May 13, 2025, 1400 hours (Malaysia Time); Commercial Proposal due by May 18, 2025, 1400 hours.
+Submission method: By email, with instructions to encrypt and password-protect bid proposals.
+Additional instructions: Request for bidders to specify passwords for encrypted documents upon submission.
+Confidentiality notice included, typical of official business communications.
+Security Analysis:
+
+The email is flagged by security systems (Cisco IronPort, Microsoft ATP) for containing a PDF attachment identified as carrying the Remcos RAT, a known remote access Trojan used for unauthorized access and control of infected systems.
+The tactic involves using a seemingly legitimate business RFQ to lure recipients into opening the malicious PDF attachment.
+The email header and content attempt to appear authentic and professional to increase the likelihood of engagement.
+Conclusion:
+This email is a phishing attempt leveraging a business RFQ theme to distribute malware via a PDF attachment. Recipients should not open the attachment or respond to the email. The incident should be reported to the organization's cybersecurity team for further investigation and mitigation.
+
+Recommendations:
+
+Block and quarantine the email and attachment.
+Alert users about the phishing attempt and educate them on recognizing similar threats.
+Conduct a thorough scan of affected systems for potential compromise.
+Review and strengthen email filtering and endpoint protection measures.
+Report prepared by: [sandeep]
+Date: [27/05/2025]

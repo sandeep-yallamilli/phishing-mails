@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phishing Email Analysis Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #005a9c;
+        }
+        section {
+            background: #fff;
+            padding: 1.5em;
+            margin-bottom: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 2em;
+            border-top: 1px solid #ccc;
+            padding-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Official Report: Phishing Email Analysis</h1>
+
+    <section>
+        <img src="phishing mail.png">
+    </section>
+
+    <section>
+        <h2>Subject</h2>
+        <p>NOT SPAM RFQ 116 10007320-PM0770 ANNUAL RADIO SURVEY PEV</p>
+    </section>
+
+    <section>
+        <h2>Summary</h2>
+        <p>
+            An email purporting to be an official Request for Quotation (RFQ) from a company named Petra Energy Berhad invites recipients to submit competitive bids for an annual radio survey project. The email requests technical and commercial proposals with specific submission deadlines and instructions. However, the email is flagged as a phishing attempt with a malicious PDF attachment containing the Remcos Remote Access Trojan (RAT).
+        </p>
+    </section>
+
+    <section>
+        <h2>Details</h2>
+        <ul>
+            <li><strong>Sender:</strong> Identified as "Petra" (email redacted)</li>
+            <li><strong>Recipient:</strong> Redacted</li>
+            <li><strong>Date:</strong> May 8, 2025</li>
+            <li><strong>Content:</strong> Invitation to participate in a bidding process for the annual radio survey, outlining submission requirements including technical proposal, commercial proposal, validity of quotation, payment terms, and standard terms and conditions.</li>
+            <li><strong>Submission Deadlines:</strong> 
+                <ul>
+                    <li>Technical and Commercial Unpriced Bid Proposals: May 13, 2025, 1400 hours (Malaysia Time)</li>
+                    <li>Commercial Proposal: May 18, 2025, 1400 hours (Malaysia Time)</li>
+                </ul>
+            </li>
+            <li><strong>Submission Method:</strong> By email, with instructions to encrypt and password-protect bid proposals.</li>
+            <li><strong>Additional Instructions:</strong> Request for bidders to specify passwords for encrypted documents upon submission.</li>
+            <li><strong>Confidentiality Notice:</strong> Included, typical of official business communications.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Security Analysis</h2>
+        <p>
+            The email is flagged by security systems (Cisco IronPort, Microsoft ATP) for containing a PDF attachment identified as carrying the Remcos RAT, a known remote access Trojan used for unauthorized access and control of infected systems. The tactic involves using a seemingly legitimate business RFQ to lure recipients into opening the malicious PDF attachment. The email header and content attempt to appear authentic and professional to increase the likelihood of engagement.
+        </p>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>
+            This email is a phishing attempt leveraging a business RFQ theme to distribute malware via a PDF attachment. Recipients should not open the attachment or respond to the email. The incident should be reported to the organization's cybersecurity team for further investigation and mitigation.
+        </p>
+    </section>
+
+    <section>
+        <h2>Recommendations</h2>
+        <ul>
+            <li>Block and quarantine the email and attachment.</li>
+            <li>Alert users about the phishing attempt and educate them on recognizing similar threats.</li>
+            <li>Conduct a thorough scan of affected systems for potential compromise.</li>
+            <li>Review and strengthen email filtering and endpoint protection measures.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Report prepared by: [sandeep]</p>
+        <p>Date: [27/05/2025]</p>
+    </footer>
+</body>
+</html>
